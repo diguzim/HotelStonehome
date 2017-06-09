@@ -1,0 +1,44 @@
+.nav {
+  margin-top: 20px;
+  display: block;
+  float: none;
+}
+.nav li {
+  font-family: Arial, sans-serif;
+  float: none;
+}
+/* Smartphones and  (portrait and landscape) ----------- */
+@media all and (max-width: 1024px) {
+  .nav {
+    text-align: left;
+  }
+  .nav li {
+    font-size: 14px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav li a {
+    color: black;
+  }
+  .nav li a:hover {
+    background-color: transparent;
+    color: #999;
+    border: none;
+  }
+}
+@media all and (min-width: 1025px) {
+  .nav {
+    text-align: center;
+    border: none;
+  }
+  .nav li {
+    font-size: 16px;
+    display: inline-block;
+  }
+  .nav li a {
+    color: black;
+  }
+  .nav li a:hover {
+    color: #999;
+  }
+}
