@@ -125,6 +125,10 @@
 	margin-top: 40px;
 }
 
+#quadros {
+	display: none;
+}
+
 }
 
 /*
@@ -204,6 +208,23 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 50vw;
+}
+
+#quadros {
+	-webkit-box-ordinal-group: 4;
+	-moz-box-ordinal-group: 4;
+	-ms-flex-order: 4;
+	-webkit-order: 4;
+	order: 4;
+
+	margin-top: 30px;
+	#imagem {
+		float: left;
+		img {
+			width: 50vw;
+			height: auto;
+		}
+	}
 }
 
 }

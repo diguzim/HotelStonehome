@@ -21,3 +21,19 @@
 		<button type="button" class="btn btn-default btn-lg"><span>Conheça o hotel</span></button>
 	</div>
 </div>
+
+<div id="quadros">
+	<div id="imagem">
+		<img src='/images/hotel/pedra/02.jpg'>
+	</div>
+	<div id="imagem">
+		<img src='/images/hotel/pedra/09.jpg'>
+	</div>
+	<div id="imagem">
+		<img src='/images/hotel/pedra/07.jpg'>
+	</div>
+	<div id="imagem">
+		<img src='/images/hotel/pedra/04.jpg'>
+	</div>
+
+</div>
