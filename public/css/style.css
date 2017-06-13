@@ -99,7 +99,9 @@
     background-color: white;
     margin-top: 40px;
   }
-  #quadros {
+  #quadros,
+  #eventos,
+  .footer {
     display: none;
   }
 }
@@ -182,12 +184,103 @@
     -ms-flex-order: 4;
     order: 4;
     margin-top: 30px;
+    background: black;
   }
   #quadros #imagem {
     float: left;
   }
   #quadros #imagem img {
-    width: 50vw;
+    width: 49.5vw;
     height: auto;
+  }
+  #eventos {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+    margin-top: 120px;
+    background: white;
+    width: 100vw;
+    margin-bottom: 120px;
+  }
+  #eventos #evento {
+    display: inline-block;
+    text-align: center;
+    width: 49vw;
+  }
+  #eventos #evento h2 {
+    font-size: 22px;
+    color: #666;
+    border-bottom: 15px;
+  }
+  #eventos #evento img {
+    display: inline;
+    max-width: 40vw;
+    height: auto;
+  }
+  #eventos #evento button {
+    display: block;
+    margin: auto;
+    z-index: 1000;
+    background-color: black;
+    border: 0;
+    position: relative;
+    top: -20px;
+  }
+  #eventos #evento button span {
+    font-size: 14px;
+    color: white;
+  }
+  .footer {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #7b89a0;
+    padding-top: 60px;
+    min-height: 400px;
+  }
+  .footer .row {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #666;
+  }
+  .footer .footer-sessao {
+    min-height: 50%;
+  }
+  .footer .footer-sessao h1 {
+    margin-bottom: 20px;
+    color: #ccc;
+    margin-top: 0;
+  }
+  .footer #footer-qualificacoes img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .footer #footer-navegar {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 3vw 3vw 3vw;
+  }
+  .footer #footer-navegar .footer-navegar-col {
+    padding-left: 0;
+  }
+  .footer #footer-navegar .footer-navegar-col ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .footer #footer-navegar .footer-navegar-col ul li {
+    padding-bottom: 5px;
+  }
+  .footer #footer-navegar .footer-navegar-col ul li a {
+    color: inherit;
+  }
+  .footer #footer-navegar .footer-navegar-col ul li a:hover {
+    text-decoration: inherit;
+    color: #666;
+  }
+  .footer #footer-contato {
+    padding-left: 3vw;
   }
 }
