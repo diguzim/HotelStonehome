@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/quartos', 'QuartosController@index');
+Route::get('/quartos', 'QuartoController@index');
