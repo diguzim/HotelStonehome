@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<div id='super-div'>
+	<div class="container-fluid">
 		@include ('layouts.nav')
 
 		@yield ('content')

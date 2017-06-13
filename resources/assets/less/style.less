@@ -1,24 +1,7 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-#super-div {
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    /* optional */
-    -webkit-box-align: start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-}
+
 .nav {
 	display: block;
 	float: none;
@@ -28,17 +11,14 @@
     	float: none;
 	}	
 }
+
 #myCarousel {
 	.carousel-control.left, .carousel-control.right {
 		background-image: none;
 	}
 }
+
 #apresentacao {
-	-webkit-box-ordinal-group: 4;
-	-moz-box-ordinal-group: 4;
-	-ms-flex-order: 4;
-	-webkit-order: 4;
-	order: 4;
 	#texto {
 		h1 {
 			font-size: 32px;
@@ -60,7 +40,28 @@
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
+
 @media all and (max-width : 1024px) {
+
+.container-fluid {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    // optional
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
 .menu-topo-responsivo {
 	-webkit-box-ordinal-group: 1;
 	-moz-box-ordinal-group: 1;
@@ -102,19 +103,26 @@
 		display: none;
 	}
 }
+
 #myCarousel {
 	-webkit-box-ordinal-group: 2;
 	-moz-box-ordinal-group: 2;
 	-ms-flex-order: 2;
 	-webkit-order: 2;
 	order: 2;
-	width: 100vw;
 }
-.apresentacao {
+
+#apresentacao {
+	-webkit-box-ordinal-group: 4;
+	-moz-box-ordinal-group: 4;
+	-ms-flex-order: 4;
+	-webkit-order: 4;
+	order: 4;
 	width: 100vw;
 	background-color: white;
 	margin-top: 40px;
 }
+
 #quadros, #eventos, .footer {
 	display: none;
 }
@@ -127,15 +135,16 @@
 .menu-topo-responsivo {
 	display: none;
 }
+
 .menu-principal {
 	z-index: 1000;
 	position: absolute;
-	width: 100vw;
 	margin-top: 30px;
+	width: 100%;
 	.nav {
 		margin-top: 30px;
 		position: relative;
-		width: 98vw;
+		width: 100%;
 		text-align: center;
 		border: 0;
 		margin: 0;
@@ -160,65 +169,59 @@
 			a:hover {
 				background-color: transparent;
 			}
-			img{
+			img {
 				height: 50px;
 				width: auto;
 			}
 		} 
 	}
 }
+
 #myCarousel {
-	z-index: 10;
+	//z-index: 10;
 	background-color: black;
-	overflow: hidden;
-	height: 100vh;
 	img {
 		width: 100vw;
 		height: auto;
 		opacity: 0.8;
-    	filter: alpha(opacity=80); /* For IE8 and earlier */
+		filter: alpha(opacity=80); // For IE8 and earlier
 	}
 }
+
 #apresentacao {
-	width: 100vw;
-	padding: 0 5vw;
+	min-height: 400px;
+	margin-top: 60px;
+	margin-bottom: 100px;
 	#texto {
-		width: 60vw;
-		padding-right: 30vw;
-		margin-left: 10vw;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
-	background-color: white;
-	background-image: url('/images/rocks/rock01.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 50vw;
+	#apresentacao-imagem {
+		min-height: 400px;
+		height: 60vh;
+		max-height: 600px;
+		background-image: url('/images/rocks/rock01.jpg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 100%;
+	}
 }
+
 #quadros {
-	-webkit-box-ordinal-group: 4;
-	-moz-box-ordinal-group: 4;
-	-ms-flex-order: 4;
-	-webkit-order: 4;
-	order: 4;
 	margin-top: 30px;
-	background: black;
-	#imagem {
-		float: left;
-		img {
-			width: 49.5vw;
-			height: auto;
-		}
+	margin-bottom: 80px;
+	.nopadding {
+		padding: 0 !important;
+	}
+	img {
+		width: 100%;
+		height: auto;
 	}
 }
+
 #eventos {
-	-webkit-box-ordinal-group: 5;
-	-moz-box-ordinal-group: 5;
-	-ms-flex-order: 5;
-	-webkit-order: 5;
-	order: 5;
-	margin-top: 120px;
 	background: white;
-	width: 100vw;
-	margin-bottom: 120px;
+	margin-bottom: 80px;
 
 	#evento {
 		display: inline-block;
@@ -251,20 +254,9 @@
 }
 
 .footer {
-	-webkit-box-ordinal-group: 6;
-	-moz-box-ordinal-group: 6;
-	-ms-flex-order: 6;
-	-webkit-order: 6;
-	order: 6;
-	width: 100vw;
-	margin: 0 auto;
 	background-color: #7b89a0;
 	padding-top: 60px;
-	min-height: 400px;
-	.row {
-		padding-bottom: 40px;
-		border-bottom: 1px solid #666;
-	}
+	padding-bottom: 50px;
 	.footer-sessao {
 		min-height: 50%;
 		h1 {

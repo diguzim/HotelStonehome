@@ -1,8 +1,8 @@
-<div class="container-fluid menu-topo-responsivo">
+<div class="menu-topo-responsivo row">
 	<a href="#"><img src="/images/logo/logo.png" alt=""></a>
 </div>
 
-<div class="container-fluid menu-principal">
+<div class="menu-principal row">
 	<ul class="nav nav-tabs">
 		<li class="navbar-brand"><a href="/"><img src="/images/logo/logo.png" alt="Dispute Bills"></a></li>
 		<li role="presentation"><a href="#">O HOTEL</a></li>
