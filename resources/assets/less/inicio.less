@@ -1,23 +1,11 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-.nav {
-	display: block;
-	float: none;
-	li {
-		font-family:Arial,sans-serif;
-		letter-spacing: 0px;
-    	float: none;
-	}	
-}
-
+/*
+	Common for all
+*/
 #myCarousel {
 	.carousel-control.left, .carousel-control.right {
 		background-image: none;
 	}
 }
-
 #apresentacao {
 	#texto {
 		h1 {
@@ -40,9 +28,7 @@
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
-
 @media all and (max-width : 1024px) {
-
 .container-fluid {
 	display: -webkit-box;
     display: -moz-box;
@@ -61,25 +47,8 @@
     -webkit-align-items: flex-start;
     align-items: flex-start;
 }
-
-.menu-topo-responsivo {
-	-webkit-box-ordinal-group: 1;
-	-moz-box-ordinal-group: 1;
-	-ms-flex-order: 1;
-	-webkit-order: 1;
-	order: 1;
-	width: 100vw;
-	min-height: 100px;
-	text-align: center;
-	background-color: #222;
-	img {
-		width: 50%;
-		height: auto;
-		margin-top: 5vh;
-		margin-bottom: 3vh;
-	}
-}
 .menu-principal {
+	display: initial;
 	-webkit-box-ordinal-group: 3;
 	-moz-box-ordinal-group: 3;
 	-ms-flex-order: 3;
@@ -103,7 +72,6 @@
 		display: none;
 	}
 }
-
 #myCarousel {
 	-webkit-box-ordinal-group: 2;
 	-moz-box-ordinal-group: 2;
@@ -111,7 +79,6 @@
 	-webkit-order: 2;
 	order: 2;
 }
-
 #apresentacao {
 	-webkit-box-ordinal-group: 4;
 	-moz-box-ordinal-group: 4;
@@ -122,8 +89,7 @@
 	background-color: white;
 	margin-top: 40px;
 }
-
-#quadros, #eventos, .footer {
+#quadros, #eventos {
 	display: none;
 }
 }
@@ -132,53 +98,7 @@
 	Computers -----------
 */
 @media all and (min-width : 1025px) {
-.menu-topo-responsivo {
-	display: none;
-}
-
-.menu-principal {
-	z-index: 1000;
-	position: absolute;
-	margin-top: 30px;
-	width: 100%;
-	.nav {
-		margin-top: 30px;
-		position: relative;
-		width: 100%;
-		text-align: center;
-		border: 0;
-		margin: 0;
-		padding: 0;
-		li {
-			font-size:14px;
-			font-weight: bold;
-			display: inline-block;
-			margin: 0 0.9vw 0 0;
-			padding: 0;
-			a {
-				color: white;
-				text-shadow: black 0.1em 0.1em 0.2em;
-				&:hover {
-					background-color: rgba(250, 250, 250, 0.3);
-					border: 0;
-				}
-			}
-		}
-		.navbar-brand {
-			margin-right: 0;
-			a:hover {
-				background-color: transparent;
-			}
-			img {
-				height: 50px;
-				width: auto;
-			}
-		} 
-	}
-}
-
 #myCarousel {
-	//z-index: 10;
 	background-color: black;
 	img {
 		width: 100vw;
@@ -187,7 +107,6 @@
 		filter: alpha(opacity=80); // For IE8 and earlier
 	}
 }
-
 #apresentacao {
 	min-height: 400px;
 	margin-top: 60px;
@@ -206,7 +125,6 @@
 		background-position: 100%;
 	}
 }
-
 #quadros {
 	margin-top: 30px;
 	margin-bottom: 80px;
@@ -218,7 +136,6 @@
 		height: auto;
 	}
 }
-
 #eventos {
 	background: white;
 	margin-bottom: 80px;
@@ -249,56 +166,6 @@
 				font-size: 14px;
 				color: white;
 			}
-		}
-	}
-}
-
-.footer {
-	background-color: #7b89a0;
-	padding-top: 60px;
-	padding-bottom: 50px;
-	.footer-sessao {
-		min-height: 50%;
-		h1 {
-			margin-bottom: 20px;
-			color: #ccc;
-			margin-top: 0;
-		}
-	}
-	#footer-qualificacoes {
-		img {
-			width: 80%;
-			height: auto;
-			display: block;
-			margin: auto;
-		}
-	}
-	#footer-navegar {
-		border-left: 1px solid black;
-		border-right: 1px solid black;
-		padding: 0 3vw 3vw 3vw;
-		.footer-navegar-col {
-			padding-left: 0;
-			ul {
-				padding-left: 0;
-				list-style: none;
-				li {
-					padding-bottom: 5px;
-					a {
-						color: inherit;
-						&:hover {
-							text-decoration: inherit;
-							color: #666;
-						}
-					}
-				}
-			}
-		}
-	}
-	#footer-contato {
-		padding-left: 3vw;
-		h1 {
-			
 		}
 	}
 }

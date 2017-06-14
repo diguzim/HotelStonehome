@@ -4,12 +4,12 @@
 
 <div class="menu-principal row">
 	<ul class="nav nav-tabs">
-		<li class="navbar-brand"><a href="/"><img src="/images/logo/logo.png" alt="Dispute Bills"></a></li>
-		<li role="presentation"><a href="#">O HOTEL</a></li>
-		<li role="presentation"><a href="#">QUARTOS</a></li>
-		<li role="presentation"><a href="#">LOCALIZAÇÃO</a></li>
-		<li role="presentation"><a href="#">GALERIA</a></li>
-		<li role="presentation"><a href="#">CONTATO</a></li>
-		<li role="presentation"><a href="#">AGENDE AGORA</a></li>
+		<li class="navbar-brand"><a href="/"><img src="/images/logo/logo.png" alt="logo"></a></li>
+		<li role="presentation" id="nav-hotel"><a href="#"><span>O HOTEL</span></a></li>
+		<li role="presentation" id="nav-quartos"><a href="/quartos"><span>QUARTOS</span></a></li>
+		<li role="presentation" id="nav-localizacao"><a href="#"><span>LOCALIZAÇÃO</span></a></li>
+		<li role="presentation" id="nav-galeria"><a href="#"><span>GALERIA</span></a></li>
+		<li role="presentation" id="nav-contato"><a href="#"><span>CONTATO</span></a></li>
+		<li role="presentation" id="nav-agende"><a href="#"><span>AGENDE AGORA</span></a></li>
 	</ul>
 </div>

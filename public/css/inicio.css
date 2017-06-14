@@ -1,0 +1,152 @@
+/*
+	Common for all
+*/
+#myCarousel .carousel-control.left,
+#myCarousel .carousel-control.right {
+  background-image: none;
+}
+#apresentacao #texto h1 {
+  font-size: 32px;
+  color: #666;
+  margin-bottom: 30px;
+}
+#apresentacao #texto p {
+  font-size: 17px;
+}
+#apresentacao #texto button {
+  background-color: #444;
+}
+#apresentacao #texto button span {
+  color: #ddd;
+}
+/*
+	Smartphones and  (portrait and landscape) -----------
+*/
+@media all and (max-width: 1024px) {
+  .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .menu-principal {
+    display: initial;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    text-align: left;
+    width: 100vw;
+  }
+  .menu-principal li {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .menu-principal li:hover {
+    color: #999;
+  }
+  .menu-principal li a {
+    color: black;
+  }
+  .menu-principal .navbar-brand {
+    display: none;
+  }
+  #myCarousel {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  #apresentacao {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+    width: 100vw;
+    background-color: white;
+    margin-top: 40px;
+  }
+  #quadros,
+  #eventos {
+    display: none;
+  }
+}
+/*
+	Computers -----------
+*/
+@media all and (min-width: 1025px) {
+  #myCarousel {
+    background-color: black;
+  }
+  #myCarousel img {
+    width: 100vw;
+    height: auto;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+  #apresentacao {
+    min-height: 400px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  #apresentacao #texto {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #apresentacao #apresentacao-imagem {
+    min-height: 400px;
+    height: 60vh;
+    max-height: 600px;
+    background-image: url('/images/rocks/rock01.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+  }
+  #quadros {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  #quadros .nopadding {
+    padding: 0 !important;
+  }
+  #quadros img {
+    width: 100%;
+    height: auto;
+  }
+  #eventos {
+    background: white;
+    margin-bottom: 80px;
+  }
+  #eventos #evento {
+    display: inline-block;
+    text-align: center;
+    width: 49vw;
+  }
+  #eventos #evento h2 {
+    font-size: 22px;
+    color: #666;
+    border-bottom: 15px;
+  }
+  #eventos #evento img {
+    display: inline;
+    max-width: 40vw;
+    height: auto;
+  }
+  #eventos #evento button {
+    display: block;
+    margin: auto;
+    z-index: 1000;
+    background-color: black;
+    border: 0;
+    position: relative;
+    top: -20px;
+  }
+  #eventos #evento button span {
+    font-size: 14px;
+    color: white;
+  }
+}

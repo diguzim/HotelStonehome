@@ -3,5 +3,8 @@ var elixir = require('laravel-elixir');
 gulp.task('default', function () { console.log('Hello Gulp!') });
 
 elixir(function(mix) {
-    mix.less('app.less');
+    mix.less([
+    	'common.less',
+    	'inicio.less'
+    ]);
 });

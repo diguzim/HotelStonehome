@@ -1,5 +1,9 @@
 @extends ('layouts.master')
 
+@section ('css_path')
+<link href="/css/inicio.css" rel="stylesheet">
+@endsection
+
 @section ('content')
 
 <div id="myCarousel" class="carousel slide row" data-ride="carousel">

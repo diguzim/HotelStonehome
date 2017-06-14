@@ -1,5 +1,12 @@
-Arrumar tudo para bootstrap grids
-	Ver se isso arruma o problema de ficar colocando a barra de navegação horizontal
 Padronizar algumas coisas na página
-	Botões padrão de cor e hover
-Fazer no footer a minha assinatura
+	Botões, padrão de cor e hover
+Menu de navegação
+	Fazer dropdown pra algumas sessões (sessao de dropdown do w3s bootstrap pode ajudar, sessão collapse, tabs/pills, navbar)
+Menu responsivo
+	Fazer ele ficar fixo no topo em todas as páginas
+Footer
+	a minha assinatura
+	melhorar o espaçamento
+	colocar glypicons de redes sociais
+Quartos
+	Bootstrap tables tem uma função que pode ficar fazendo o esquema de zebra pras características do quarto
