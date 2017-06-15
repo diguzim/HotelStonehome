@@ -17,7 +17,22 @@ body {
     	float: none;
 	}
 }
-
+#background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 600px;
+	width: 100%;
+	background-image: url('/images/quartos/fundo.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	z-index: -1;
+}
+#info {
+	background-color: #eee;
+	padding: 50px;
+}
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
@@ -38,6 +53,9 @@ body {
 		margin-top: 5vh;
 		margin-bottom: 3vh;
 	}
+}
+#info {
+	margin-top: 100px;
 }
 .menu-principal, .footer {
 	display: none;
@@ -104,6 +122,10 @@ body {
 			}
 		} 
 	}
+}
+#info {
+	margin-top: 300px;
+	margin-bottom: 100px;
 }
 .footer {
 	background-color: #7b89a0;

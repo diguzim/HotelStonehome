@@ -2,32 +2,23 @@
 	Common for all
 */
 #background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  background-image: url('/images/quartos/fundo.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  z-index: -1;
+  background-image: url('/images/localizacao/fundo.jpg');
 }
-#info {
-  background-color: #eee;
-  padding: 0;
-  padding-bottom: 50px;
+#info #foto-endereco #foto img {
+  max-width: 100%;
+}
+#info #mapa {
+  margin-top: 50px;
+  border: 1px solid black;
+}
+#info #mapa #map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
 }
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
-@media all and (max-width: 1024px) {
-  margin-top: 100px;
-}
 /*
 	Computers -----------
 */
-@media all and (min-width: 1025px) {
-  margin-top: 200px;
-  margin-bottom: 100px;
-}

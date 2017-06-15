@@ -11,3 +11,7 @@ Route::get('/quartos/{quarto}', 'QuartoController@show');
 Route::get('/localizacao', function() {
 	return view('localizacao');
 });
+
+Route::get('/galeria', function() {
+	return view('galeria');
+});

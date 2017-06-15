@@ -8,7 +8,7 @@
 <div id="background">
 </div>
 
-<div id="quartos">
+<div class="container" id="info">
 	<h1>Quartos</h1>
 	<div class="quarto-miniatura">
 		<a href="/quartos/quarto">

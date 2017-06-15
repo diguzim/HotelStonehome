@@ -1,49 +1,35 @@
 /*
 	Common for all
 */
-#background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  width: 100%;
-  background-image: url('/images/quartos/fundo.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  z-index: -1;
-}
-#quartos {
-  background-color: #eee;
+#info {
   text-align: center;
   padding: 50px 30px;
   max-width: 1200px;
-  margin: auto;
 }
-#quartos h1 {
+#info h1 {
   position: relative;
   top: -20px;
 }
-#quartos .quarto-miniatura {
+#info .quarto-miniatura {
   margin: 10px 10px;
   display: inline-block;
   background-color: white;
   height: 250px;
   width: 350px;
 }
-#quartos .quarto-miniatura a {
+#info .quarto-miniatura a {
   color: black;
 }
-#quartos .quarto-miniatura a img {
+#info .quarto-miniatura a img {
   width: 100%;
   height: 200px;
   display: inline;
 }
-#quartos .quarto-miniatura a h2 {
+#info .quarto-miniatura a h2 {
   font-size: 26px;
   margin-top: 10px;
 }
-#quartos .quarto-miniatura a:hover {
+#info .quarto-miniatura a:hover {
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
   color: #666;
@@ -51,16 +37,6 @@
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
-@media all and (max-width: 1024px) {
-  #quartos {
-    margin-top: 100px;
-  }
-}
 /*
 	Computers -----------
 */
-@media all and (min-width: 1025px) {
-  #quartos {
-    margin-top: 300px;
-  }
-}

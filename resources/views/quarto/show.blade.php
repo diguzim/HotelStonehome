@@ -32,4 +32,12 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function () {
+		$(".nav li").removeClass("active");//this will remove the active class from  
+		//previously active menu item 
+		$('#nav-quartos').addClass('active');
+	});
+</script>
 @endsection
