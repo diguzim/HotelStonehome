@@ -44,9 +44,9 @@ class QuartoController extends Controller
      * @param  \App\Quarto  $quarto
      * @return \Illuminate\Http\Response
      */
-    public function show(Quarto $quarto)
+    public function show()
     {
-        //
+        return view('quarto.show');
     }
 
     /**

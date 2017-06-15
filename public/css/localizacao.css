@@ -18,43 +18,16 @@
   padding: 0;
   padding-bottom: 50px;
 }
-#info #nome {
-  padding-left: 50px;
-  margin-left: 0;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-}
-#info #resumo-fotos {
-  padding-left: 50px;
-}
-#info #resumo-fotos h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#info #resumo-fotos p {
-  margin: 0;
-}
-#info #resumo-fotos img {
-  width: 100%;
-}
-#info #detalhes {
-  margin-top: 20px;
-  padding-right: 50px;
-}
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
 @media all and (max-width: 1024px) {
-  #info {
-    margin-top: 100px;
-  }
+  margin-top: 100px;
 }
 /*
 	Computers -----------
 */
 @media all and (min-width: 1025px) {
-  #info {
-    margin-top: 200px;
-    margin-bottom: 100px;
-  }
+  margin-top: 200px;
+  margin-bottom: 100px;
 }

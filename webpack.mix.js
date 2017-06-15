@@ -14,4 +14,6 @@ let mix = require('laravel-mix');
  mix.js('resources/assets/js/app.js', 'public/js')
 	.less('resources/assets/less/common.less', 'public/css')
 	.less('resources/assets/less/inicio.less', 'public/css')
-	.less('resources/assets/less/quarto.less', 'public/css');
+	.less('resources/assets/less/quarto.less', 'public/css')
+	.less('resources/assets/less/quartos.less', 'public/css')
+	.less('resources/assets/less/localizacao.less', 'public/css');
