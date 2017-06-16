@@ -1,0 +1,45 @@
+/*
+	Common for all
+*/
+#background {
+	background-image: url('/images/contato/fundo.jpg');
+}
+#info {
+	#contato {
+		margin-bottom: 50px;
+		h1 {
+			margin-top: 0;
+			margin-bottom: 20px;
+			border-bottom: 1px solid black;
+		}
+		#map {
+			width: 100%;
+			min-height: 250px;
+			border: 1px solid black;
+		}
+	}
+	#mensagem {
+		p {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+	}
+}
+/*
+	Smartphones and  (portrait and landscape) -----------
+*/
+@media all and (max-width : 1024px) {
+
+}
+
+/*
+	Computers -----------
+*/
+@media all and (min-width : 1025px) {
+#info {
+	#mensagem {
+		padding-left: 50px;
+		padding-right: 100px;
+	}
+}
+}

@@ -18,6 +18,14 @@ body {
   letter-spacing: 0px;
   float: none;
 }
+.nav #nav-agende {
+  background-color: white;
+  margin-left: 20px;
+}
+.nav #nav-agende span {
+  color: black;
+  text-shadow: none;
+}
 #background {
   position: absolute;
   top: 0;
@@ -85,7 +93,7 @@ body {
     padding: 0;
   }
   .menu-principal .nav li {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     display: inline-block;
     margin: 0 0.9vw 0 0;

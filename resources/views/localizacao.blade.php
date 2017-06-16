@@ -28,18 +28,18 @@
 			function initMap() {
 				var map = new google.maps.Map(document.getElementById('map'), {
 					center: {lat: 54.070358, lng: -2.790076},
-					zoom: 17
+					zoom: 15
 				});
-			var hotel = {lat: 54.070358, lng: -2.790076};
-			var marker = new google.maps.Marker({
-	        	position: hotel,
-	        	map: map
-	        	});
+				var hotel = {lat: 54.070358, lng: -2.790076};
+				var marker = new google.maps.Marker({
+					position: hotel,
+					map: map
+				});
 			}
 		</script>
 		<script async defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOJaBrApGIyIC8-phuApt7g3qvME3YaDU&callback=initMap">
-		</script>
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOJaBrApGIyIC8-phuApt7g3qvME3YaDU&callback=initMap">
+	</script>
 
 	</div>
 </div>

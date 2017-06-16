@@ -15,3 +15,7 @@ Route::get('/localizacao', function() {
 Route::get('/galeria', function() {
 	return view('galeria');
 });
+
+Route::get('/contato', function() {
+	return view('contato');
+});
