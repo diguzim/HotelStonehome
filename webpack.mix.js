@@ -18,4 +18,9 @@ let mix = require('laravel-mix');
 	.less('resources/assets/less/quartos.less', 'public/css')
 	.less('resources/assets/less/localizacao.less', 'public/css')
 	.less('resources/assets/less/galeria.less', 'public/css')
-	.less('resources/assets/less/contato.less', 'public/css');
+	.less('resources/assets/less/contato.less', 'public/css')
+	.less('resources/assets/less/sobre.less', 'public/css')
+	.less('resources/assets/less/instalacoes.less', 'public/css')
+	.less('resources/assets/less/restaurantes.less', 'public/css')
+	.less('resources/assets/less/atividades.less', 'public/css')
+	.less('resources/assets/less/eventos.less', 'public/css');

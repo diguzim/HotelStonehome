@@ -1,6 +1,9 @@
 /*
 	Common for all
 */
+#background {
+  background-image: url('/images/quartos/fundo.jpg');
+}
 #info {
   text-align: center;
   padding: 50px 30px;
@@ -13,26 +16,30 @@
 #info .quarto-miniatura {
   margin: 10px 10px;
   display: inline-block;
-  background-color: white;
-  height: 250px;
-  width: 350px;
+  height: 200px;
+  width: 300px;
+  margin-bottom: 50px;
 }
 #info .quarto-miniatura a {
-  color: black;
+  color: #222;
 }
 #info .quarto-miniatura a img {
   width: 100%;
   height: 200px;
-  display: inline;
 }
 #info .quarto-miniatura a h2 {
   font-size: 26px;
-  margin-top: 10px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
 }
 #info .quarto-miniatura a:hover {
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-  color: #666;
+  text-decoration: none;
+}
+#info .quarto-miniatura a:hover h2 {
+  background-color: maroon;
+  color: white;
 }
 /*
 	Smartphones and  (portrait and landscape) -----------

@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: white;
+	background-color: #eee;
 }
 .nav {
 	display: block;
@@ -17,11 +17,17 @@ body {
     	float: none;
 	}
 	#nav-agende {
-		background-color: white;
+		background-color: #eee;
 		margin-left: 20px;
 		span {
 			color: black;
 			text-shadow: none;
+		}
+		&:hover {
+			background-color: maroon;
+			span {
+				color: white;
+			}
 		}
 	}
 }
@@ -31,21 +37,20 @@ body {
 	left: 0;
 	height: 600px;
 	width: 100%;
-	background-image: url('/images/quartos/fundo.jpg');
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
 	z-index: -1;
 }
 #info {
-	background-color: #eee;
+	background-color: #fff;
 	padding: 50px;
 }
 /*
 	Smartphones and  (portrait and landscape) -----------
 */
 @media all and (max-width : 1024px) {
-.menu-topo-responsivo {
+#menu-topo-responsivo {
 	-webkit-box-ordinal-group: 1;
 	-moz-box-ordinal-group: 1;
 	-ms-flex-order: 1;
@@ -55,18 +60,91 @@ body {
 	min-height: 100px;
 	text-align: center;
 	background-color: #222;
+	.iconClosed {
+		float: left;
+		margin-left: 80px;
+		margin-top: 45px;
+		color: white;
+		font-size: 48px;
+	}
 	img {
 		width: 50%;
 		height: auto;
 		margin-top: 5vh;
 		margin-bottom: 3vh;
 	}
+	#sidebar {
+		width: 250px;
+		height: 100%;
+		background-color: white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		display: none;
+		.iconOpened {
+			color: black;
+			font-size: 32px;
+		}
+		#nav-hotel-2 {
+			display: none;
+		}
+		li {
+			font-size:14px;
+			font-weight: bold;
+			margin: 0 0.9vw 0 0;
+			padding: 0;
+			a {
+				border: none !important;
+				color: #bbb;
+				&:hover {
+					background-color: rgba(250, 250, 250, 0.3);
+					border: 0;
+					color: #222 !important;
+				}
+			}
+		}
+		.active {
+			a {
+				background: inherit !important;
+				span {
+					border-bottom: 3px solid rgba(250, 250, 250, 0.8) !important;
+				}
+				&:hover {
+					color: #222 !important;
+					background-color: rgba(250, 250, 250, 0.3) !important;
+				}
+			}
+		}
+		.navbar-brand {
+			margin-right: 0;
+			a:hover {
+				background-color: transparent;
+			}
+			img {
+				height: 50px;
+				width: auto;
+			}
+		}
+		.dropdown-menu {
+			padding: 15px;
+			a {
+				padding-top: 5px;
+				padding-bottom: 15px;
+				color: black;
+				text-shadow: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
 #info {
 	margin-top: 100px;
 }
 .menu-principal, .footer {
-	display: none;
+	display: none !important;
 }
 }
 
@@ -74,7 +152,7 @@ body {
 	Computers -----------
 */
 @media all and (min-width : 1025px) {
-.menu-topo-responsivo {
+#menu-topo-responsivo {
 	display: none;
 }
 .menu-principal {
@@ -99,7 +177,7 @@ body {
 			padding: 0;
 			a {
 				border: none !important;
-				color: white;
+				color: #eee;
 				text-shadow: black 0.1em 0.1em 0.2em;
 				&:hover {
 					background-color: rgba(250, 250, 250, 0.3);
@@ -114,7 +192,7 @@ body {
 					border-bottom: 3px solid rgba(250, 250, 250, 0.8) !important;
 				}
 				&:hover {
-					color: white !important;
+					color: #eee !important;
 					background-color: rgba(250, 250, 250, 0.3) !important;
 				}
 			}
@@ -128,60 +206,83 @@ body {
 				height: 50px;
 				width: auto;
 			}
-		} 
+		}
+		.dropdown-menu {
+			padding: 15px;
+			a {
+				padding-top: 5px;
+				padding-bottom: 15px;
+				color: black;
+				text-shadow: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 }
 #info {
 	margin-top: 300px;
 	margin-bottom: 100px;
 }
-.footer {
+footer {
 	background-color: #7b89a0;
 	padding-top: 60px;
 	padding-bottom: 50px;
-	.footer-sessao {
-		min-height: 50%;
-		h1 {
-			margin-bottom: 20px;
-			color: #ccc;
-			margin-top: 0;
+	.container {
+		#footer-colunas {
+			padding-bottom: 40px;
+			border-bottom: 1px solid #222;
 		}
-	}
-	#footer-qualificacoes {
-		img {
-			width: 80%;
-			height: auto;
-			display: block;
-			margin: auto;
+		.footer-sessao {
+			min-height: 50%;
+			h1 {
+				margin-bottom: 20px;
+				color: #eee;
+				margin-top: 0;
+			}
 		}
-	}
-	#footer-navegar {
-		border-left: 1px solid black;
-		border-right: 1px solid black;
-		padding: 0 3vw 3vw 3vw;
-		.footer-navegar-col {
-			padding-left: 0;
-			ul {
+		#footer-qualificacoes {
+			img {
+				width: 80%;
+				height: auto;
+				display: block;
+				margin: auto;
+			}
+		}
+		#footer-navegar {
+			border-left: 1px solid #222;
+			border-right: 1px solid #222;
+			padding: 0 3vw 3vw 3vw;
+			.footer-navegar-col {
 				padding-left: 0;
-				list-style: none;
-				li {
-					padding-bottom: 5px;
-					a {
-						color: inherit;
-						&:hover {
-							text-decoration: inherit;
-							color: #666;
+				ul {
+					padding-left: 0;
+					list-style: none;
+					li {
+						padding-bottom: 5px;
+						a {
+							color: inherit;
+							&:hover {
+								text-decoration: inherit;
+								color: #eee;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
-	#footer-contato {
-		padding-left: 3vw;
-		h1 {
-			
+		#footer-contato {
+			padding-left: 3vw;
+			h1 {
+				
+			}
+		}
+		#creditos {
+			padding-top: 20px;
+			text-align: center;
 		}
 	}
+	
 }
 }

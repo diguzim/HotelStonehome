@@ -12,18 +12,40 @@
 	<h1>Quartos</h1>
 	<div class="quarto-miniatura">
 		<a href="/quartos/quarto">
-			<img src="/images/quartos/04.jpg">
+			<img src="/images/quartos/01.jpg">
 			<h2>King Albert</h2>
 		</a>
 	</div>
-	@for ($i=0; $i<7; $i++)
+	<div class="quarto-miniatura">
+		<a href="/quartos/quarto">
+			<img src="/images/quartos/02.jpg">
+			<h2>Queen Livia</h2>
+		</a>
+	</div>
+	<div class="quarto-miniatura">
+		<a href="/quartos/quarto">
+			<img src="/images/quartos/03.jpg">
+			<h2>Princess Elizabeth</h2>
+		</a>
+	</div>
+	<div class="quarto-miniatura">
+		<a href="/quartos/quarto">
+			<img src="/images/quartos/04.jpg">
+			<h2>Knight Steiner</h2>
+		</a>
+	</div>
 	<div class="quarto-miniatura">
 		<a href="/quartos/quarto">
 			<img src="/images/quartos/05.jpg">
-			<h2>Prince Jerom</h2>
+			<h2>Priest Zidane</h2>
 		</a>
 	</div>
-	@endfor
+	<div class="quarto-miniatura">
+		<a href="/quartos/quarto">
+			<img src="/images/quartos/06.jpg">
+			<h2>Ambassador George</h2>
+		</a>
+	</div>
 </div>
 
 <script>

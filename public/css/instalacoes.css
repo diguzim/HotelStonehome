@@ -1,0 +1,53 @@
+/*
+	Common for all
+*/
+#background {
+  background-image: url('/images/instalacoes/fundo.jpg');
+}
+#info h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#info p {
+  font-size: 18px;
+}
+#info #pt1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #222;
+}
+#info #pt1 img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+#info .pt2 {
+  margin-top: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #222;
+}
+#info .pt2 img {
+  width: 100%;
+  height: auto;
+}
+#info .pt2:last-of-type {
+  border-bottom: none;
+}
+/*
+	Smartphones and  (portrait and landscape) -----------
+*/
+@media all and (max-width: 1024px) {
+  #info #pt1 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*
+	Computers -----------
+*/
+@media all and (min-width: 1025px) {
+  #info #pt1 img {
+    float: left;
+  }
+}

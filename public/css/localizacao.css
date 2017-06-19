@@ -7,6 +7,12 @@
 #info #foto-endereco #foto img {
   max-width: 100%;
 }
+#info #foto-endereco #endereco {
+  padding-left: 50px;
+}
+#info #foto-endereco #endereco h2 {
+  margin-top: 0;
+}
 #info #mapa {
   margin-top: 50px;
   border: 1px solid black;

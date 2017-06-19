@@ -7,5 +7,10 @@
   "/css/quartos.css": "/css/quartos.css",
   "/css/localizacao.css": "/css/localizacao.css",
   "/css/galeria.css": "/css/galeria.css",
-  "/css/contato.css": "/css/contato.css"
+  "/css/contato.css": "/css/contato.css",
+  "/css/sobre.css": "/css/sobre.css",
+  "/css/instalacoes.css": "/css/instalacoes.css",
+  "/css/restaurantes.css": "/css/restaurantes.css",
+  "/css/atividades.css": "/css/atividades.css",
+  "/css/eventos.css": "/css/eventos.css"
 }

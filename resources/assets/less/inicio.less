@@ -7,6 +7,7 @@
 	}
 }
 #apresentacao {
+	background-color: white;
 	#texto {
 		h1 {
 			font-size: 32px;
@@ -16,10 +17,16 @@
 		p {
 			font-size: 17px;
 		}
-		button {
+		a {
 			background-color: #444;
 			span {
 				color: #ddd;
+			}
+			&:hover {
+				background-color: maroon;
+				span {
+					color: white;
+				}
 			}
 		}
 	}
@@ -87,7 +94,6 @@
 	order: 4;
 	width: 100vw;
 	background-color: white;
-	margin-top: 40px;
 }
 #quadros, #eventos {
 	display: none;
@@ -101,7 +107,6 @@
 #myCarousel {
 	background-color: black;
 	img {
-		width: 100vw;
 		height: auto;
 		opacity: 0.8;
 		filter: alpha(opacity=80); // For IE8 and earlier
@@ -109,8 +114,8 @@
 }
 #apresentacao {
 	min-height: 400px;
-	margin-top: 60px;
-	margin-bottom: 100px;
+	padding-top: 60px;
+	padding-bottom: 100px;
 	#texto {
 		padding-left: 10%;
 		padding-right: 10%;
@@ -126,8 +131,7 @@
 	}
 }
 #quadros {
-	margin-top: 30px;
-	margin-bottom: 80px;
+	background-color: black;
 	.nopadding {
 		padding: 0 !important;
 	}
@@ -135,15 +139,36 @@
 		width: 100%;
 		height: auto;
 	}
+	.quadro {
+		position: relative;
+		h2 {
+			position: absolute;
+			top: 0;
+			padding-top: 42%;
+			font-size: 24px;
+			color: white;
+			text-shadow: black 0.1em 0.1em 0.1em;
+			text-align: center;
+			width: 100%;
+			span {
+				font-size: 16px;
+			}
+		}
+		&:hover {
+			img {
+				opacity: 0.7;
+				filter: alpha(opacity=70); // For IE8 and earlier
+			}
+		}
+	}
 }
 #eventos {
-	background: white;
+	background: #eee;
 	margin-bottom: 80px;
+	margin-top: 80px;
 
-	#evento {
-		display: inline-block;
+	.evento {
 		text-align: center;
-		width: 49vw;
 		h2 {
 			font-size: 22px;
 			color: #666;
@@ -151,11 +176,11 @@
 		}
 		img {
 			display: inline;
-			max-width: 40vw;
+			max-width: 100%;
 			height: auto;
 		}
-		button {
-			display: block;
+		a {
+			display: inline-block;
 			margin: auto;
 			z-index: 1000;
 			background-color: black;
@@ -165,6 +190,12 @@
 			span {
 				font-size: 14px;
 				color: white;
+			}
+			&:hover {
+				background-color: maroon;
+				span {
+					color: white;
+				}
 			}
 		}
 	}

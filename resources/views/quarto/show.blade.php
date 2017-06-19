@@ -10,23 +10,27 @@
 
 <div class="container" id="info">
 	<div id="nome">
-		<h1>Quarto X</h1>
+		<h1>King Albert</h1>
 	</div>
 	<div class="row">
 		<div class="col-md-7" id="resumo-fotos">
 			<h2>Resumo do quarto</h2>
-			<p>2 pessoas</p>
+			<p>2 adultos e 1 criança menor de 4 anos</p>
 			<p>1 cama de casal</p><br>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
-			<img src="/images/quartos/04.jpg">
+			<p>O quarto foi inspirado nos gostos do rei Albert que reinou a inglaterra na segunda metade do século XV. Seus móveis possuem mais de um século de existência, trabalhados na melhor madeira maciça da região do Humber. Tecidos de cetim de melhor qualidade acompanham o conforto da cama de casal. Uma clarabóia na parte superior do quarto fornece uma incrível iluminação matinal, fazendo do despertar um ato de prazer.</p><br>
+			<img src="/images/quartos/01.jpg">
 		</div>
 		<div class="col-md-5" id="detalhes">
 			<table class="table table-striped">
 				<tbody>
-					<tr><td>lalalalala</td></tr>
-					<tr><td>lalalalala</td></tr>
-					<tr><td>lalalalala</td></tr>
-					<tr><td>lalalalala</td></tr>
+					<tr><td>Área de 26m2</td></tr>
+					<tr><td>Cama de casal king size com aquecimento</td></tr>
+					<tr><td>Roupas de cama em cetim</td></tr>
+					<tr><td>Espelho grande</td></tr>
+					<tr><td>Acesso a Internet Wi-Fi</td></tr>
+					<tr><td>Chuveiro e WC independentes</td></tr>
+					<tr><td>Roupões de banho e chinelos</td></tr>
+					<tr><td>Berço para crianças(mediante solicitação)</td></tr>
 				</tbody>
 			</table>
 		</div>
